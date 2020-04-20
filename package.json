@@ -7,6 +7,9 @@
     "x-init": "bin/x-init.js",
     "x-list": "bin/x-list.js"
   },
+  "scripts": {
+    "changelog": "conventional-changelog -p custom-config-2 -i CHANGELOG.md -s -r 0"
+  },
   "author": "whu-luojian",
   "license": "MIT",
   "publishConfig": {
@@ -31,5 +34,26 @@
     "request": "^2.88.2",
     "semver": "^7.3.2",
     "user-home": "^2.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "conventional-changelog-cli": "^2.0.31",
+    "conventional-changelog-custom-config-2": "^0.4.0",
+    "eslint": "^6.8.0",
+    "husky": "^4.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "changelog": {
+    "authorName": true,
+    "emojis": true,
+    "commitTypes": [
+      "feat",
+      "fix"
+    ]
   }
 }
