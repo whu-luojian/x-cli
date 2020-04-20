@@ -51,7 +51,7 @@ const rawName = program.args[1] // 项目名
 const inPlace = !rawName || rawName === '.' // 是否在当前文件夹下创建
 const projectName = inPlace ? path.relative('../', process.cwd()) : rawName // 项目名
 const to = path.resolve(rawName || '.') // 目标文件路径
-const tmp = path.join(home, '.x-templates', templateName.replace(/[\/:]/g, '-')) // 模板临时文件夹
+const tmp = path.join(home, '.x-templates', templateName.replace(/[/:]/g, '-')) // 模板临时文件夹
 
 /**
  * Padding.
