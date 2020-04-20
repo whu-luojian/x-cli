@@ -1,4 +1,4 @@
-# mammut-cli
+# x-cli
 
 A simple cli for scaffolding frontend projects.
 
