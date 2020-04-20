@@ -1,6 +1,6 @@
 {
   "name": "@yanluo/x-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "\"A simple cli for scaffolding frontend projects \"",
   "bin": {
     "x": "bin/x.js",
