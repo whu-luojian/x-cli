@@ -115,7 +115,7 @@ function downloadAndGenerate (templateUrl) {
         process.exit(1)
       }
       console.log()
-      console.log(chalk.green('Generated "%s".', projectName))
+      console.log(chalk.green('Generated "%s".'), projectName)
     })
   })
 }
