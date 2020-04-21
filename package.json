@@ -2,6 +2,7 @@
   "name": "@yanluo/x-cli",
   "version": "1.0.2",
   "description": "\"A simple cli for scaffolding frontend projects \"",
+  "keywords": ["cli", "template", "frontend", "vue", "react", "node"],
   "bin": {
     "x": "bin/x.js",
     "x-init": "bin/x-init.js",
